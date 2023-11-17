@@ -19,6 +19,10 @@ Um elemento <div> utiliza o controlador MyFirstController com ng-controller="MyF
 Há um <input> com ng-model="name", o que significa que qualquer alteração neste input irá refletir automaticamente na variável name do $scope.
 A expressão {{name}} dentro do HTML exibirá dinamicamente o valor de name conforme for alterado pelo usuário no input.
 
+ng-model é uma diretiva do AngularJS usada para vincular os elementos de formulário (como <input>, <select>, <textarea>, etc.) a uma propriedade em um escopo AngularJS. Essa diretiva cria um vínculo bidirecional entre o valor do elemento de entrada no DOM e a propriedade no escopo do controlador.
+
+Quando você usa ng-model="name" em um elemento <input>, por exemplo, você está dizendo ao AngularJS para criar uma variável chamada name no escopo do controlador (definido pelo ng-controller) e vincular essa variável ao valor do elemento <input>. Qualquer alteração feita no campo de entrada será refletida automaticamente na variável name do escopo do controlador e vice-versa.
+
 Para exibir o resultado da função sayHello (ou seja, a string "Hello Coursera!"), você precisa invocar essa função dentro das expressões {{}}.
 
 ` {{sayHello()}} `
